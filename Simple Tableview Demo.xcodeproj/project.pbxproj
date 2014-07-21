@@ -14,13 +14,28 @@
 		2778F07D197D364400070334 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2778F07C197D364400070334 /* main.m */; };
 		2778F081197D364400070334 /* SDCCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2778F080197D364400070334 /* SDCCAppDelegate.m */; };
 		2778F084197D364400070334 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2778F082197D364400070334 /* Main.storyboard */; };
-		2778F087197D364400070334 /* SDCCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2778F086197D364400070334 /* SDCCViewController.m */; };
 		2778F089197D364400070334 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2778F088197D364400070334 /* Images.xcassets */; };
 		2778F090197D364400070334 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2778F08F197D364400070334 /* XCTest.framework */; };
 		2778F091197D364400070334 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2778F070197D364400070334 /* Foundation.framework */; };
 		2778F092197D364400070334 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2778F074197D364400070334 /* UIKit.framework */; };
 		2778F09A197D364400070334 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2778F098197D364400070334 /* InfoPlist.strings */; };
 		2778F09C197D364400070334 /* Simple_Tableview_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2778F09B197D364400070334 /* Simple_Tableview_DemoTests.m */; };
+		2778F0AA197D42B600070334 /* SDCCTrueBloodCharachterData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2778F0A9197D42B600070334 /* SDCCTrueBloodCharachterData.m */; };
+		2778F0AD197D431800070334 /* SDCCCharachtersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2778F0AC197D431800070334 /* SDCCCharachtersTableViewController.m */; };
+		2778F0C8197D511300070334 /* SDCCCharachter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2778F0C7197D511300070334 /* SDCCCharachter.m */; };
+		2778F0CD197D6ECC00070334 /* SDCCCharacterImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2778F0CC197D6ECC00070334 /* SDCCCharacterImageViewController.m */; };
+		2778F0DA197D741F00070334 /* Alcide.png in Resources */ = {isa = PBXBuildFile; fileRef = 2778F0CE197D741F00070334 /* Alcide.png */; };
+		2778F0DB197D741F00070334 /* Bill.png in Resources */ = {isa = PBXBuildFile; fileRef = 2778F0CF197D741F00070334 /* Bill.png */; };
+		2778F0DC197D741F00070334 /* Eric.png in Resources */ = {isa = PBXBuildFile; fileRef = 2778F0D0197D741F00070334 /* Eric.png */; };
+		2778F0DD197D741F00070334 /* Hoyt.png in Resources */ = {isa = PBXBuildFile; fileRef = 2778F0D1197D741F00070334 /* Hoyt.png */; };
+		2778F0DE197D741F00070334 /* Jason.png in Resources */ = {isa = PBXBuildFile; fileRef = 2778F0D2197D741F00070334 /* Jason.png */; };
+		2778F0DF197D741F00070334 /* Jessica.png in Resources */ = {isa = PBXBuildFile; fileRef = 2778F0D3197D741F00070334 /* Jessica.png */; };
+		2778F0E0197D741F00070334 /* Lafayette.png in Resources */ = {isa = PBXBuildFile; fileRef = 2778F0D4197D741F00070334 /* Lafayette.png */; };
+		2778F0E1197D741F00070334 /* Pam.png in Resources */ = {isa = PBXBuildFile; fileRef = 2778F0D5197D741F00070334 /* Pam.png */; };
+		2778F0E2197D741F00070334 /* Sam.png in Resources */ = {isa = PBXBuildFile; fileRef = 2778F0D6197D741F00070334 /* Sam.png */; };
+		2778F0E3197D741F00070334 /* Sookie.png in Resources */ = {isa = PBXBuildFile; fileRef = 2778F0D7197D741F00070334 /* Sookie.png */; };
+		2778F0E4197D741F00070334 /* Tara.png in Resources */ = {isa = PBXBuildFile; fileRef = 2778F0D8197D741F00070334 /* Tara.png */; };
+		2778F0E5197D741F00070334 /* Terry.png in Resources */ = {isa = PBXBuildFile; fileRef = 2778F0D9197D741F00070334 /* Terry.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +60,32 @@
 		2778F07F197D364400070334 /* SDCCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDCCAppDelegate.h; sourceTree = "<group>"; };
 		2778F080197D364400070334 /* SDCCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDCCAppDelegate.m; sourceTree = "<group>"; };
 		2778F083197D364400070334 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2778F085197D364400070334 /* SDCCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDCCViewController.h; sourceTree = "<group>"; };
-		2778F086197D364400070334 /* SDCCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDCCViewController.m; sourceTree = "<group>"; };
 		2778F088197D364400070334 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2778F08E197D364400070334 /* Simple Tableview DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Simple Tableview DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2778F08F197D364400070334 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		2778F097197D364400070334 /* Simple Tableview DemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Simple Tableview DemoTests-Info.plist"; sourceTree = "<group>"; };
 		2778F099197D364400070334 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2778F09B197D364400070334 /* Simple_Tableview_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Simple_Tableview_DemoTests.m; sourceTree = "<group>"; };
+		2778F0A8197D42B600070334 /* SDCCTrueBloodCharachterData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCCTrueBloodCharachterData.h; sourceTree = "<group>"; };
+		2778F0A9197D42B600070334 /* SDCCTrueBloodCharachterData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCCTrueBloodCharachterData.m; sourceTree = "<group>"; };
+		2778F0AB197D431800070334 /* SDCCCharachtersTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCCCharachtersTableViewController.h; sourceTree = "<group>"; };
+		2778F0AC197D431800070334 /* SDCCCharachtersTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCCCharachtersTableViewController.m; sourceTree = "<group>"; };
+		2778F0C6197D511300070334 /* SDCCCharachter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCCCharachter.h; sourceTree = "<group>"; };
+		2778F0C7197D511300070334 /* SDCCCharachter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCCCharachter.m; sourceTree = "<group>"; };
+		2778F0CB197D6ECC00070334 /* SDCCCharacterImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCCCharacterImageViewController.h; sourceTree = "<group>"; };
+		2778F0CC197D6ECC00070334 /* SDCCCharacterImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCCCharacterImageViewController.m; sourceTree = "<group>"; };
+		2778F0CE197D741F00070334 /* Alcide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Alcide.png; sourceTree = "<group>"; };
+		2778F0CF197D741F00070334 /* Bill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bill.png; sourceTree = "<group>"; };
+		2778F0D0197D741F00070334 /* Eric.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Eric.png; sourceTree = "<group>"; };
+		2778F0D1197D741F00070334 /* Hoyt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hoyt.png; sourceTree = "<group>"; };
+		2778F0D2197D741F00070334 /* Jason.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Jason.png; sourceTree = "<group>"; };
+		2778F0D3197D741F00070334 /* Jessica.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Jessica.png; sourceTree = "<group>"; };
+		2778F0D4197D741F00070334 /* Lafayette.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lafayette.png; sourceTree = "<group>"; };
+		2778F0D5197D741F00070334 /* Pam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pam.png; sourceTree = "<group>"; };
+		2778F0D6197D741F00070334 /* Sam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sam.png; sourceTree = "<group>"; };
+		2778F0D7197D741F00070334 /* Sookie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sookie.png; sourceTree = "<group>"; };
+		2778F0D8197D741F00070334 /* Tara.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tara.png; sourceTree = "<group>"; };
+		2778F0D9197D741F00070334 /* Terry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Terry.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,9 +148,13 @@
 				2778F07F197D364400070334 /* SDCCAppDelegate.h */,
 				2778F080197D364400070334 /* SDCCAppDelegate.m */,
 				2778F082197D364400070334 /* Main.storyboard */,
-				2778F085197D364400070334 /* SDCCViewController.h */,
-				2778F086197D364400070334 /* SDCCViewController.m */,
+				2778F0AB197D431800070334 /* SDCCCharachtersTableViewController.h */,
+				2778F0AC197D431800070334 /* SDCCCharachtersTableViewController.m */,
+				2778F0CB197D6ECC00070334 /* SDCCCharacterImageViewController.h */,
+				2778F0CC197D6ECC00070334 /* SDCCCharacterImageViewController.m */,
 				2778F088197D364400070334 /* Images.xcassets */,
+				2778F0CA197D514400070334 /* Data */,
+				2778F0C9197D512300070334 /* Model */,
 				2778F077197D364400070334 /* Supporting Files */,
 			);
 			path = "Simple Tableview Demo";
@@ -126,6 +163,18 @@
 		2778F077197D364400070334 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2778F0CE197D741F00070334 /* Alcide.png */,
+				2778F0CF197D741F00070334 /* Bill.png */,
+				2778F0D0197D741F00070334 /* Eric.png */,
+				2778F0D1197D741F00070334 /* Hoyt.png */,
+				2778F0D2197D741F00070334 /* Jason.png */,
+				2778F0D3197D741F00070334 /* Jessica.png */,
+				2778F0D4197D741F00070334 /* Lafayette.png */,
+				2778F0D5197D741F00070334 /* Pam.png */,
+				2778F0D6197D741F00070334 /* Sam.png */,
+				2778F0D7197D741F00070334 /* Sookie.png */,
+				2778F0D8197D741F00070334 /* Tara.png */,
+				2778F0D9197D741F00070334 /* Terry.png */,
 				2778F078197D364400070334 /* Simple Tableview Demo-Info.plist */,
 				2778F079197D364400070334 /* InfoPlist.strings */,
 				2778F07C197D364400070334 /* main.m */,
@@ -150,6 +199,24 @@
 				2778F098197D364400070334 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2778F0C9197D512300070334 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2778F0C6197D511300070334 /* SDCCCharachter.h */,
+				2778F0C7197D511300070334 /* SDCCCharachter.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		2778F0CA197D514400070334 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				2778F0A8197D42B600070334 /* SDCCTrueBloodCharachterData.h */,
+				2778F0A9197D42B600070334 /* SDCCTrueBloodCharachterData.m */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +296,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2778F0DC197D741F00070334 /* Eric.png in Resources */,
+				2778F0E3197D741F00070334 /* Sookie.png in Resources */,
 				2778F089197D364400070334 /* Images.xcassets in Resources */,
 				2778F07B197D364400070334 /* InfoPlist.strings in Resources */,
+				2778F0E2197D741F00070334 /* Sam.png in Resources */,
+				2778F0DB197D741F00070334 /* Bill.png in Resources */,
+				2778F0E5197D741F00070334 /* Terry.png in Resources */,
 				2778F084197D364400070334 /* Main.storyboard in Resources */,
+				2778F0E4197D741F00070334 /* Tara.png in Resources */,
+				2778F0E0197D741F00070334 /* Lafayette.png in Resources */,
+				2778F0E1197D741F00070334 /* Pam.png in Resources */,
+				2778F0DD197D741F00070334 /* Hoyt.png in Resources */,
+				2778F0DF197D741F00070334 /* Jessica.png in Resources */,
+				2778F0DA197D741F00070334 /* Alcide.png in Resources */,
+				2778F0DE197D741F00070334 /* Jason.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,9 +329,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2778F0AA197D42B600070334 /* SDCCTrueBloodCharachterData.m in Sources */,
 				2778F07D197D364400070334 /* main.m in Sources */,
-				2778F087197D364400070334 /* SDCCViewController.m in Sources */,
 				2778F081197D364400070334 /* SDCCAppDelegate.m in Sources */,
+				2778F0CD197D6ECC00070334 /* SDCCCharacterImageViewController.m in Sources */,
+				2778F0C8197D511300070334 /* SDCCCharachter.m in Sources */,
+				2778F0AD197D431800070334 /* SDCCCharachtersTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
