@@ -20,9 +20,9 @@
 		2778F092197D364400070334 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2778F074197D364400070334 /* UIKit.framework */; };
 		2778F09A197D364400070334 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2778F098197D364400070334 /* InfoPlist.strings */; };
 		2778F09C197D364400070334 /* Simple_Tableview_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2778F09B197D364400070334 /* Simple_Tableview_DemoTests.m */; };
-		2778F0AA197D42B600070334 /* SDCCTrueBloodCharachterData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2778F0A9197D42B600070334 /* SDCCTrueBloodCharachterData.m */; };
-		2778F0AD197D431800070334 /* SDCCCharachtersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2778F0AC197D431800070334 /* SDCCCharachtersTableViewController.m */; };
-		2778F0C8197D511300070334 /* SDCCCharachter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2778F0C7197D511300070334 /* SDCCCharachter.m */; };
+		2778F0AA197D42B600070334 /* SDCCTrueBloodCharacterData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2778F0A9197D42B600070334 /* SDCCTrueBloodCharacterData.m */; };
+		2778F0AD197D431800070334 /* SDCCCharactersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2778F0AC197D431800070334 /* SDCCCharactersTableViewController.m */; };
+		2778F0C8197D511300070334 /* SDCCCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2778F0C7197D511300070334 /* SDCCCharacter.m */; };
 		2778F0CD197D6ECC00070334 /* SDCCCharacterImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2778F0CC197D6ECC00070334 /* SDCCCharacterImageViewController.m */; };
 		2778F0DA197D741F00070334 /* Alcide.png in Resources */ = {isa = PBXBuildFile; fileRef = 2778F0CE197D741F00070334 /* Alcide.png */; };
 		2778F0DB197D741F00070334 /* Bill.png in Resources */ = {isa = PBXBuildFile; fileRef = 2778F0CF197D741F00070334 /* Bill.png */; };
@@ -36,6 +36,7 @@
 		2778F0E3197D741F00070334 /* Sookie.png in Resources */ = {isa = PBXBuildFile; fileRef = 2778F0D7197D741F00070334 /* Sookie.png */; };
 		2778F0E4197D741F00070334 /* Tara.png in Resources */ = {isa = PBXBuildFile; fileRef = 2778F0D8197D741F00070334 /* Tara.png */; };
 		2778F0E5197D741F00070334 /* Terry.png in Resources */ = {isa = PBXBuildFile; fileRef = 2778F0D9197D741F00070334 /* Terry.png */; };
+		2778F0E8197DA41700070334 /* SDCCCharacterDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2778F0E7197DA41700070334 /* SDCCCharacterDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,12 +67,12 @@
 		2778F097197D364400070334 /* Simple Tableview DemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Simple Tableview DemoTests-Info.plist"; sourceTree = "<group>"; };
 		2778F099197D364400070334 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2778F09B197D364400070334 /* Simple_Tableview_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Simple_Tableview_DemoTests.m; sourceTree = "<group>"; };
-		2778F0A8197D42B600070334 /* SDCCTrueBloodCharachterData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCCTrueBloodCharachterData.h; sourceTree = "<group>"; };
-		2778F0A9197D42B600070334 /* SDCCTrueBloodCharachterData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCCTrueBloodCharachterData.m; sourceTree = "<group>"; };
-		2778F0AB197D431800070334 /* SDCCCharachtersTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCCCharachtersTableViewController.h; sourceTree = "<group>"; };
-		2778F0AC197D431800070334 /* SDCCCharachtersTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCCCharachtersTableViewController.m; sourceTree = "<group>"; };
-		2778F0C6197D511300070334 /* SDCCCharachter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCCCharachter.h; sourceTree = "<group>"; };
-		2778F0C7197D511300070334 /* SDCCCharachter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCCCharachter.m; sourceTree = "<group>"; };
+		2778F0A8197D42B600070334 /* SDCCTrueBloodCharacterData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCCTrueBloodCharacterData.h; sourceTree = "<group>"; };
+		2778F0A9197D42B600070334 /* SDCCTrueBloodCharacterData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCCTrueBloodCharacterData.m; sourceTree = "<group>"; };
+		2778F0AB197D431800070334 /* SDCCCharactersTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCCCharactersTableViewController.h; sourceTree = "<group>"; };
+		2778F0AC197D431800070334 /* SDCCCharactersTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCCCharactersTableViewController.m; sourceTree = "<group>"; };
+		2778F0C6197D511300070334 /* SDCCCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCCCharacter.h; sourceTree = "<group>"; };
+		2778F0C7197D511300070334 /* SDCCCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCCCharacter.m; sourceTree = "<group>"; };
 		2778F0CB197D6ECC00070334 /* SDCCCharacterImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCCCharacterImageViewController.h; sourceTree = "<group>"; };
 		2778F0CC197D6ECC00070334 /* SDCCCharacterImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCCCharacterImageViewController.m; sourceTree = "<group>"; };
 		2778F0CE197D741F00070334 /* Alcide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Alcide.png; sourceTree = "<group>"; };
@@ -86,6 +87,8 @@
 		2778F0D7197D741F00070334 /* Sookie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sookie.png; sourceTree = "<group>"; };
 		2778F0D8197D741F00070334 /* Tara.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tara.png; sourceTree = "<group>"; };
 		2778F0D9197D741F00070334 /* Terry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Terry.png; sourceTree = "<group>"; };
+		2778F0E6197DA41700070334 /* SDCCCharacterDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCCCharacterDetailViewController.h; sourceTree = "<group>"; };
+		2778F0E7197DA41700070334 /* SDCCCharacterDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCCCharacterDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,10 +151,12 @@
 				2778F07F197D364400070334 /* SDCCAppDelegate.h */,
 				2778F080197D364400070334 /* SDCCAppDelegate.m */,
 				2778F082197D364400070334 /* Main.storyboard */,
-				2778F0AB197D431800070334 /* SDCCCharachtersTableViewController.h */,
-				2778F0AC197D431800070334 /* SDCCCharachtersTableViewController.m */,
+				2778F0AB197D431800070334 /* SDCCCharactersTableViewController.h */,
+				2778F0AC197D431800070334 /* SDCCCharactersTableViewController.m */,
 				2778F0CB197D6ECC00070334 /* SDCCCharacterImageViewController.h */,
 				2778F0CC197D6ECC00070334 /* SDCCCharacterImageViewController.m */,
+				2778F0E6197DA41700070334 /* SDCCCharacterDetailViewController.h */,
+				2778F0E7197DA41700070334 /* SDCCCharacterDetailViewController.m */,
 				2778F088197D364400070334 /* Images.xcassets */,
 				2778F0CA197D514400070334 /* Data */,
 				2778F0C9197D512300070334 /* Model */,
@@ -204,8 +209,8 @@
 		2778F0C9197D512300070334 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2778F0C6197D511300070334 /* SDCCCharachter.h */,
-				2778F0C7197D511300070334 /* SDCCCharachter.m */,
+				2778F0C6197D511300070334 /* SDCCCharacter.h */,
+				2778F0C7197D511300070334 /* SDCCCharacter.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -213,8 +218,8 @@
 		2778F0CA197D514400070334 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				2778F0A8197D42B600070334 /* SDCCTrueBloodCharachterData.h */,
-				2778F0A9197D42B600070334 /* SDCCTrueBloodCharachterData.m */,
+				2778F0A8197D42B600070334 /* SDCCTrueBloodCharacterData.h */,
+				2778F0A9197D42B600070334 /* SDCCTrueBloodCharacterData.m */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -329,12 +334,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2778F0AA197D42B600070334 /* SDCCTrueBloodCharachterData.m in Sources */,
+				2778F0AA197D42B600070334 /* SDCCTrueBloodCharacterData.m in Sources */,
 				2778F07D197D364400070334 /* main.m in Sources */,
 				2778F081197D364400070334 /* SDCCAppDelegate.m in Sources */,
 				2778F0CD197D6ECC00070334 /* SDCCCharacterImageViewController.m in Sources */,
-				2778F0C8197D511300070334 /* SDCCCharachter.m in Sources */,
-				2778F0AD197D431800070334 /* SDCCCharachtersTableViewController.m in Sources */,
+				2778F0E8197DA41700070334 /* SDCCCharacterDetailViewController.m in Sources */,
+				2778F0C8197D511300070334 /* SDCCCharacter.m in Sources */,
+				2778F0AD197D431800070334 /* SDCCCharactersTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Sadicco. All rights reserved.
 //
 
-#import "SDCCTrueBloodCharachterData.h"
+#import "SDCCTrueBloodCharacterData.h"
 
-@implementation SDCCTrueBloodCharachterData
+@implementation SDCCTrueBloodCharacterData
 
 + (NSArray *)allCharachters {
     NSMutableArray *charachters = [@[] mutableCopy];

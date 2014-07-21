@@ -6,16 +6,16 @@
 //  Copyright (c) 2014 Sadicco. All rights reserved.
 //
 
-#import "SDCCCharachtersTableViewController.h"
-#import "SDCCTrueBloodCharachterData.h"
-#import "SDCCCharachter.h"
+#import "SDCCCharactersTableViewController.h"
+#import "SDCCTrueBloodCharacterData.h"
+#import "SDCCCharacter.h"
 #import "SDCCCharacterImageViewController.h"
 
-@interface SDCCCharachtersTableViewController ()
+@interface SDCCCharactersTableViewController ()
 
 @end
 
-@implementation SDCCCharachtersTableViewController
+@implementation SDCCCharactersTableViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -36,12 +36,12 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    self.charachters = [[NSMutableArray alloc] init];
+    self.characters = [[NSMutableArray alloc] init];
     
-    for (NSMutableDictionary *charachterData in [SDCCTrueBloodCharachterData allCharachters]) {
+    for (NSMutableDictionary *charachterData in [SDCCTrueBloodCharacterData allCharachters]) {
         NSString *imageName = [NSString stringWithFormat:@"%@.png", charachterData[NAME]];
-        SDCCCharachter *charachter = [[SDCCCharachter alloc] initWithData:charachterData andImage:[UIImage imageNamed:imageName]];
-        [self.charachters addObject:charachter];
+        SDCCCharacter *character = [[SDCCCharacter alloc] initWithData:charachterData andImage:[UIImage imageNamed:imageName]];
+        [self.characters addObject:character];
         
     }
 }
@@ -61,7 +61,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.charachters.count;
+    return self.characters.count;
 }
 
 
@@ -69,7 +69,7 @@
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     
-    SDCCCharachter *character = [self.charachters objectAtIndex:indexPath.row];
+    SDCCCharacter *character = [self.characters objectAtIndex:indexPath.row];
     cell.textLabel.text = character.name;
     cell.detailTextLabel.text = character.fullname;
     cell.imageView.image = character.image;
@@ -127,8 +127,8 @@
         if ([segue.destinationViewController isKindOfClass:[SDCCCharacterImageViewController class]]) {
             SDCCCharacterImageViewController *nextViewController = segue.destinationViewController;
             NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
-            SDCCCharachter *selectCharacter = [self.charachters objectAtIndex:indexPath.row];
-            nextViewController.charachter = selectCharacter;
+            SDCCCharacter *selectCharacter = [self.characters objectAtIndex:indexPath.row];
+            nextViewController.character = selectCharacter;
         }
     }
 }

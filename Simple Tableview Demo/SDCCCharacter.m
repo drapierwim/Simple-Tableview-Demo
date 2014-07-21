@@ -6,10 +6,10 @@
 //  Copyright (c) 2014 Sadicco. All rights reserved.
 //
 
-#import "SDCCCharachter.h"
-#import "SDCCTrueBloodCharachterData.h"
+#import "SDCCCharacter.h"
+#import "SDCCTrueBloodCharacterData.h"
 
-@implementation SDCCCharachter
+@implementation SDCCCharacter
 
 - (id)init
 {

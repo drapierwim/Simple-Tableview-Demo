@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SDCCCharachtersTableViewController : UITableViewController
+@interface SDCCCharactersTableViewController : UITableViewController
 
-@property (strong, nonatomic)NSMutableArray *charachters;
+@property (strong, nonatomic)NSMutableArray *characters;
 
 @end

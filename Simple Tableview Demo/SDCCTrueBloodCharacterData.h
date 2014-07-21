@@ -12,7 +12,7 @@
 #define NAME @"name"
 #define FULLNAME @"fullname"
 
-@interface SDCCTrueBloodCharachterData : NSObject
+@interface SDCCTrueBloodCharacterData : NSObject
 
 +(NSArray *) allCharachters;
 

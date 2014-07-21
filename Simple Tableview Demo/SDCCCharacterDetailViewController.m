@@ -1,18 +1,18 @@
 //
-//  SDCCCharacterImageViewController.m
+//  SDCCCharacterDetailViewController.m
 //  Simple Tableview Demo
 //
 //  Created by Wim Drapier on 21/07/14.
 //  Copyright (c) 2014 Sadicco. All rights reserved.
 //
 
-#import "SDCCCharacterImageViewController.h"
+#import "SDCCCharacterDetailViewController.h"
 
-@interface SDCCCharacterImageViewController ()
+@interface SDCCCharacterDetailViewController ()
 
 @end
 
-@implementation SDCCCharacterImageViewController
+@implementation SDCCCharacterDetailViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,20 +27,28 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    self.imageView = [[UIImageView alloc] initWithImage:self.character.image];
-    
-    self.scrollView.contentSize = self.imageView.frame.size;
-    [self.scrollView addSubview:self.imageView];
-    self.scrollView.delegate = self;
-    self.scrollView.minimumZoomScale = 0.5;
-    self.scrollView.maximumZoomScale = 2.0;
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - UITableViewDataSource
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 3;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"detailCell" forIndexPath:indexPath];
+    
+    cell.textLabel.text = @"details";
+    
+    return cell;
 }
 
 /*
@@ -54,9 +62,4 @@
 }
 */
 
-#pragma mark - UIScrollViewDelegate
-- (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView
-{
-    return self.imageView;
-}
 @end
