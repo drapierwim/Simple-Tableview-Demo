@@ -11,6 +11,9 @@
 
 #define NAME @"name"
 #define FULLNAME @"fullname"
+#define SPECIES @"species"
+#define AGE @"age"
+#define PERSONALITY @"personality"
 
 @interface SDCCTrueBloodCharacterData : NSObject
 

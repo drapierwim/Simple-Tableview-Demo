@@ -12,6 +12,8 @@
 
 @property (strong, nonatomic)NSString *name;
 @property (strong, nonatomic)NSString *fullname;
+@property (strong, nonatomic)NSString *species;
+@property (nonatomic)int age;
 @property (strong, nonatomic)UIImage *image;
 
 -(id)initWithData:(NSDictionary *)data andImage:(UIImage *)image;

@@ -10,6 +10,7 @@
 #import "SDCCTrueBloodCharacterData.h"
 #import "SDCCCharacter.h"
 #import "SDCCCharacterImageViewController.h"
+#import "SDCCCharacterDetailViewController.h"
 
 @interface SDCCCharactersTableViewController ()
 
@@ -131,6 +132,19 @@
             nextViewController.character = selectCharacter;
         }
     }
+    
+    if ([sender isKindOfClass:[NSIndexPath class]]) {
+        if ([segue.destinationViewController isKindOfClass:[SDCCCharacterDetailViewController class]]) {
+            SDCCCharacterDetailViewController *characterDetailViewController = segue.destinationViewController;
+            NSIndexPath *indexPath = sender;
+            characterDetailViewController.charachter = self.characters[indexPath.row];
+        }
+    }
+}
+
+-(void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
+{
+    [self performSegueWithIdentifier:@"characterdetails" sender:indexPath];
 }
 
 @end

@@ -39,14 +39,32 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 3;
+    return 4;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"detailCell" forIndexPath:indexPath];
     
-    cell.textLabel.text = @"details";
+    switch (indexPath.row) {
+        case 0:
+            cell.textLabel.text = @"Name";
+            cell.detailTextLabel.text = self.charachter.fullname;
+            break;
+        case 1:
+            cell.textLabel.text = @"Species";
+            cell.detailTextLabel.text = self.charachter.species;
+            break;
+        case 2:
+            cell.textLabel.text = @"Age";
+            cell.detailTextLabel.text = [NSString stringWithFormat:@"%i", self.charachter.age];
+            break;
+        default:
+            cell.textLabel.text = @"details";
+            cell.detailTextLabel.text = @"more details";
+            break;
+    }
+    
     
     return cell;
 }

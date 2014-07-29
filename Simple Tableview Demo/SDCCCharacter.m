@@ -24,6 +24,8 @@
     
     self.name = data[NAME];
     self.fullname = data[FULLNAME];
+    self.species = data[SPECIES];
+    self.age = [data[AGE] intValue];
     self.image = image;
     
     return self;
