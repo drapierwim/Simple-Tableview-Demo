@@ -61,7 +61,7 @@
             break;
         default:
             cell.textLabel.text = @"details";
-            cell.detailTextLabel.text = @"more details";
+            cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", self.charachter.personality];
             break;
     }
     

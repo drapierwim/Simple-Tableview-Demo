@@ -14,6 +14,7 @@
 #define SPECIES @"species"
 #define AGE @"age"
 #define PERSONALITY @"personality"
+#define IMAGE @"image"
 
 @interface SDCCTrueBloodCharacterData : NSObject
 

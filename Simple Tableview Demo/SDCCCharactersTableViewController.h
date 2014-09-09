@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SDCCCharacterAddViewController.h"
+#import "SDCCCharacter.h"
 
-@interface SDCCCharactersTableViewController : UITableViewController
+@interface SDCCCharactersTableViewController : UITableViewController <SDCCCharacterAddViewControllerDelegate>
 
 @property (strong, nonatomic)NSMutableArray *characters;
 

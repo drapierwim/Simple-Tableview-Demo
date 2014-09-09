@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2736A3551989431C0079E24C /* SDCCCharacterAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2736A3541989431C0079E24C /* SDCCCharacterAddViewController.m */; };
 		2778F071197D364400070334 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2778F070197D364400070334 /* Foundation.framework */; };
 		2778F073197D364400070334 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2778F072197D364400070334 /* CoreGraphics.framework */; };
 		2778F075197D364400070334 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2778F074197D364400070334 /* UIKit.framework */; };
@@ -50,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2736A3531989431C0079E24C /* SDCCCharacterAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCCCharacterAddViewController.h; sourceTree = "<group>"; };
+		2736A3541989431C0079E24C /* SDCCCharacterAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCCCharacterAddViewController.m; sourceTree = "<group>"; };
 		2778F06D197D364400070334 /* Simple Tableview Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple Tableview Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2778F070197D364400070334 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2778F072197D364400070334 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -157,6 +160,8 @@
 				2778F0CC197D6ECC00070334 /* SDCCCharacterImageViewController.m */,
 				2778F0E6197DA41700070334 /* SDCCCharacterDetailViewController.h */,
 				2778F0E7197DA41700070334 /* SDCCCharacterDetailViewController.m */,
+				2736A3531989431C0079E24C /* SDCCCharacterAddViewController.h */,
+				2736A3541989431C0079E24C /* SDCCCharacterAddViewController.m */,
 				2778F088197D364400070334 /* Images.xcassets */,
 				2778F0CA197D514400070334 /* Data */,
 				2778F0C9197D512300070334 /* Model */,
@@ -336,6 +341,7 @@
 			files = (
 				2778F0AA197D42B600070334 /* SDCCTrueBloodCharacterData.m in Sources */,
 				2778F07D197D364400070334 /* main.m in Sources */,
+				2736A3551989431C0079E24C /* SDCCCharacterAddViewController.m in Sources */,
 				2778F081197D364400070334 /* SDCCAppDelegate.m in Sources */,
 				2778F0CD197D6ECC00070334 /* SDCCCharacterImageViewController.m in Sources */,
 				2778F0E8197DA41700070334 /* SDCCCharacterDetailViewController.m in Sources */,
@@ -545,6 +551,7 @@
 				2778F0A1197D364400070334 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2778F0A2197D364400070334 /* Build configuration list for PBXNativeTarget "Simple Tableview DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -553,6 +560,7 @@
 				2778F0A4197D364400070334 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

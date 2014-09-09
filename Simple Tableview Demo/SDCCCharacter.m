@@ -27,6 +27,7 @@
     self.species = data[SPECIES];
     self.age = [data[AGE] intValue];
     self.image = image;
+    self.personality = data[PERSONALITY];
     
     return self;
 }

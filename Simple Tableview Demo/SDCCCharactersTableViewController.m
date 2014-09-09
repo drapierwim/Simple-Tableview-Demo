@@ -17,6 +17,7 @@
 @end
 
 @implementation SDCCCharactersTableViewController
+#define ADDED_CHARACTER_OBJECTS_KEY @"Added character objects key"
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -37,13 +38,18 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    self.characters = [[NSMutableArray alloc] init];
+    //self.characters = [[NSMutableArray alloc] init];
     
     for (NSMutableDictionary *charachterData in [SDCCTrueBloodCharacterData allCharachters]) {
         NSString *imageName = [NSString stringWithFormat:@"%@.png", charachterData[NAME]];
         SDCCCharacter *character = [[SDCCCharacter alloc] initWithData:charachterData andImage:[UIImage imageNamed:imageName]];
         [self.characters addObject:character];
-        
+    }
+    
+    NSArray *charachtersAsPropertyList = [[NSUserDefaults standardUserDefaults] arrayForKey:ADDED_CHARACTER_OBJECTS_KEY];
+    for (NSDictionary *dictionary in charachtersAsPropertyList) {
+        SDCCCharacter *character = [self characterForDictionary:dictionary];
+        [self.characters addObject:character];
     }
 }
 
@@ -51,6 +57,63 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Properties
+
+- (NSMutableArray *)characters
+{
+    if (_characters == nil) {
+        _characters = [[NSMutableArray alloc] init];
+    }
+    return _characters;
+}
+#pragma mark - SDCCCharacterAddViewController delegate
+
+- (void)addCharacter:(SDCCCharacter *) character
+{
+//    if (!self.characters) {
+//        self.characters = [[NSMutableArray alloc] init];
+//    }
+    [self.characters addObject:character];
+    
+    NSMutableArray *characterObjectProprertyList = [[[NSUserDefaults standardUserDefaults] arrayForKey:ADDED_CHARACTER_OBJECTS_KEY] mutableCopy];
+    
+    if (characterObjectProprertyList == nil) {
+        characterObjectProprertyList = [[NSMutableArray alloc] init];
+    }
+    
+    [characterObjectProprertyList addObject: [self characterAsPopertyList:character]];
+    [[NSUserDefaults standardUserDefaults] setObject:characterObjectProprertyList forKey:ADDED_CHARACTER_OBJECTS_KEY];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
+    [self.tableView reloadData];
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)cancelAddCharacter
+{
+    NSLog(@"Canceled add character");
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+#pragma mark - Helper methods
+
+- (NSDictionary *)characterAsPopertyList:(SDCCCharacter *)character
+{
+    NSData *imageData = UIImagePNGRepresentation(character.image);
+    
+    NSDictionary *dictionary = @{FULLNAME : character.name, NAME : character.fullname, AGE : @(character.age), SPECIES : character.species, PERSONALITY : character.personality, IMAGE : imageData};
+    
+    return dictionary;
+}
+
+- (SDCCCharacter *)characterForDictionary:(NSDictionary *)dictionary
+{
+    NSData *imageData = dictionary[IMAGE];
+    UIImage *image = [[UIImage alloc] initWithData:imageData];
+    SDCCCharacter *charachter = [[SDCCCharacter alloc] initWithData:dictionary andImage:image];
+    return charachter;
 }
 
 #pragma mark - Table view data source
@@ -78,28 +141,25 @@
     return cell;
 }
 
-
-/*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Return NO if you do not want the specified item to be editable.
     return YES;
 }
-*/
 
-/*
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the row from the data source
+        [self.characters removeObjectAtIndex:indexPath.row];
+        
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
     }   
 }
-*/
 
 /*
 // Override to support rearranging the table view.
@@ -139,6 +199,11 @@
             NSIndexPath *indexPath = sender;
             characterDetailViewController.charachter = self.characters[indexPath.row];
         }
+    }
+    
+    if ([segue.destinationViewController isKindOfClass:[SDCCCharacterAddViewController class]]) {
+        SDCCCharacterAddViewController *charachterAddViewController = segue.destinationViewController;
+        charachterAddViewController.delegate = self;
     }
 }
 
