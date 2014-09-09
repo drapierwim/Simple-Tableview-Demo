@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2736A3551989431C0079E24C /* SDCCCharacterAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2736A3541989431C0079E24C /* SDCCCharacterAddViewController.m */; };
+		2744BB7B19BED49E00CA7EFC /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 2744BB7A19BED49E00CA7EFC /* .gitignore */; };
 		2778F071197D364400070334 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2778F070197D364400070334 /* Foundation.framework */; };
 		2778F073197D364400070334 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2778F072197D364400070334 /* CoreGraphics.framework */; };
 		2778F075197D364400070334 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2778F074197D364400070334 /* UIKit.framework */; };
@@ -53,6 +54,7 @@
 /* Begin PBXFileReference section */
 		2736A3531989431C0079E24C /* SDCCCharacterAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCCCharacterAddViewController.h; sourceTree = "<group>"; };
 		2736A3541989431C0079E24C /* SDCCCharacterAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCCCharacterAddViewController.m; sourceTree = "<group>"; };
+		2744BB7A19BED49E00CA7EFC /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		2778F06D197D364400070334 /* Simple Tableview Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple Tableview Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2778F070197D364400070334 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2778F072197D364400070334 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -121,6 +123,7 @@
 		2778F064197D364400070334 = {
 			isa = PBXGroup;
 			children = (
+				2744BB7A19BED49E00CA7EFC /* .gitignore */,
 				2778F076197D364400070334 /* Simple Tableview Demo */,
 				2778F095197D364400070334 /* Simple Tableview DemoTests */,
 				2778F06F197D364400070334 /* Frameworks */,
@@ -306,6 +309,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2744BB7B19BED49E00CA7EFC /* .gitignore in Resources */,
 				2778F0DC197D741F00070334 /* Eric.png in Resources */,
 				2778F0E3197D741F00070334 /* Sookie.png in Resources */,
 				2778F089197D364400070334 /* Images.xcassets in Resources */,
